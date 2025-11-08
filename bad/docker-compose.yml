@@ -1,0 +1,33 @@
+# ПЛОХОЙ docker-compose.yml
+
+version: "3.9"
+
+services:
+  web:
+    build: .
+    # 1) Полный отказ от сетевой изоляции: контейнер делит сеть с хостом
+    network_mode: host
+    environment:
+      - FLASK_ENV=production
+      # 2) Жёстко прописанные "секреты" прямо в compose
+      - DB_HOST=localhost
+      - DB_USER=root
+      - DB_PASSWORD=supersecret
+    # 3) Пробуем пробросить порт (c host network это ещё и бессмысленно)
+    ports:
+      - "80:8000"
+    restart: always
+
+  db:
+    # 4) Используем latest
+    image: mysql:latest
+    network_mode: host
+    environment:
+      - MYSQL_ROOT_PASSWORD=supersecret
+    # 5) База целиком торчит наружу
+    ports:
+      - "3306:3306"
+    # 6) Сырой bind-монтаж в текущую папку
+    volumes:
+      - ./db_data:/var/lib/mysql
+    restart: always
