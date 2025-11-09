@@ -34,16 +34,11 @@ docker compose up
 
 Запускаем билд:
 ![img.png](img.png)
-
 Проверяем compose в Docker Desktop:
-![img\_1.png](img_1.png)
-
-Приложение будет доступно по адресу:
-`http://localhost:8080/`
-
+![img_1.png](img_1.png)
+Приложение будет доступно по адресу: http://localhost:8080/  
 Страница в браузере:
-![img\_2.png](img_2.png)
-
+![img_2.png](img_2.png)
 ---
 
 ### Хорошие практики в Dockerfile (`lab2/good/Dockerfile`)
