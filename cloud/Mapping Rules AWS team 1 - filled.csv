@@ -1,0 +1,41 @@
+T Tower;Service Family;Service Type;Service Sub Type;Service Usage Type;Product Code;Usage Type; [lineItem/Operation];lineItem/LineItemDescription
+Database & Analytics;Data Warehouse;Amazon Redshift;RA3 node;Compute;AmazonRedshift;%Node:ra%;;
+Database & Analytics;Data Warehouse;Amazon Redshift;Managed storage (RMS);Storage;AmazonRedshift;%RMS%;;
+Database & Analytics;Data Warehouse;Amazon Redshift;Spectrum data scan;Data processing;AmazonRedshift;%DataScanned%;;
+Database & Analytics;Data Warehouse;Amazon Redshift;DC2 node;Compute;AmazonRedshift;%Node:dc%;;
+Database & Analytics;Data Warehouse;Amazon Redshift;DS2 node;Compute;AmazonRedshift;%Node:ds%;;
+Overhead & Tax;Taxes;Service tax;Usage tax;Tax;AWSDirectoryService;;;Tax%
+Security & Identity;Directory Services;AWS Directory Service;Microsoft AD;Directory usage;AWSDirectoryService;%MicrosoftAD-DC-Usage;;
+Security & Identity;Directory Services;AWS Directory Service;Simple AD;Directory usage;AWSDirectoryService;%SimpleAD-Usage;;
+Security & Identity;Directory Services;AWS Directory Service;Small directory;Directory usage;AWSDirectoryService;%Small-Directory-Usage;;
+Security & Identity;Directory Services;AWS Directory Service;AD Connector (large);Directory usage;AWSDirectoryService;%Large-ADConnector-Usage;;
+Storage;Archive Storage;Amazon Glacier;Provisioned retrieval capacity;Capacity;AmazonGlacier;%ProvisionedCapacityUnit;;
+Storage;Archive Storage;Amazon Glacier;Archive storage;Storage;AmazonGlacier;%TimedStorage-ByteHrs;;
+Storage;Archive Storage;Amazon Glacier;API requests Tier3;Requests;AmazonGlacier;%Requests-Tier3;;
+Storage;Archive Storage;Amazon Glacier;API requests Tier1;Requests;AmazonGlacier;%Requests-Tier1;;
+Storage;Archive Storage;Amazon Glacier;Early deletion fee;Data lifecycle;AmazonGlacier;%EarlyDelete%;;
+Storage;Object Storage;Amazon S3;Glacier Deep Archive early deletion;Data lifecycle;AmazonS3;%EarlyDelete-GDA;;
+Storage;Object Storage;Amazon S3;Intelligent-Tiering early deletion;Data lifecycle;AmazonS3;%EarlyDelete-INT;;
+Storage;Object Storage;Amazon S3;One Zone-IA early deletion;Data lifecycle;AmazonS3;%EarlyDelete-ZIA%;;
+Storage;Object Storage;Amazon S3;Standard-IA early deletion;Data lifecycle;AmazonS3;%EarlyDelete-SIA%;;
+Storage;Object Storage;Amazon S3;API requests Tier1;Requests;AmazonS3;%Requests%Tier1;;
+Storage;Object Storage;Amazon S3;API requests Tier2;Requests;AmazonS3;%Requests%Tier2;;
+Storage;Object Storage;Amazon S3;API requests Tier3;Requests;AmazonS3;%Requests%Tier3;;
+Storage;Object Storage;Amazon S3;API requests Tier4;Requests;AmazonS3;%Requests%Tier4;;
+Storage;Object Storage;Amazon S3;API requests Tier5;Requests;AmazonS3;%Requests%Tier5;;
+Storage;Object Storage;Amazon S3;API requests Tier6;Requests;AmazonS3;%Requests%Tier6;;
+Storage;Object Storage;Amazon S3;Tag storage;Metadata storage;AmazonS3;%TagStorage-TagHrs%;;
+Messaging & Integration;Pub/Sub Messaging;Amazon SNS;HTTP delivery attempts;Delivery attempts;AmazonSNS;%DeliveryAttempts-HTTP;;
+Messaging & Integration;Pub/Sub Messaging;Amazon SNS;SQS delivery attempts;Delivery attempts;AmazonSNS;%DeliveryAttempts-SQS;;
+Messaging & Integration;Pub/Sub Messaging;Amazon SNS;SMS price markup;SMS surcharge;AmazonSNS;%SMS-Price%;;
+Messaging & Integration;Pub/Sub Messaging;Amazon SNS;SMS sent;SMS messages;AmazonSNS;%SMS-Sent%;;
+Messaging & Integration;Pub/Sub Messaging;Amazon SNS;APNS delivery attempts;Delivery attempts;AmazonSNS;%DeliveryAttempts-APNS%;;
+AI & ML;ML APIs;Amazon Translate;Text translation;ML inference;translate;%TranslateText;;
+AI & ML;ML APIs;Amazon Transcribe;Streaming transcription;ML inference;transcribe;%StreamingAudio;%StreamingAudio;
+AI & ML;ML APIs;Amazon Transcribe;Batch transcription;ML inference;transcribe;%TranscribeAudio;TranscribeAudio;
+Overhead & Tax;Taxes;Service tax;Usage tax;Tax;AWSCodePipeline;;;Tax%
+DevOps & CI/CD;Pipeline Orchestration;AWS CodePipeline;Trial pipeline;Pipeline usage;AWSCodePipeline;%trialPipeline%;;
+DevOps & CI/CD;Build Service;AWS CodeBuild;Build usage;Build compute;CodeBuild;;;
+AI & ML;ML Platform;Amazon Machine Learning;Training;ML training;AmazonML;%AMLBoxUsage;TrainModel;
+AI & ML;ML Platform;Amazon Machine Learning;Evaluation;ML evaluation;AmazonML;%AMLBoxUsage;EvaluateModel;
+AI & ML;ML APIs;Amazon Polly;Text-to-speech;ML inference;AmazonPolly;;;
