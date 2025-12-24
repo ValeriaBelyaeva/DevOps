@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61dcbf96-7e09-4dc9-9c8d-4870926d774a" name="Changes" comment="added lab 1 (cloud)">
+    <list default="true" id="61dcbf96-7e09-4dc9-9c8d-4870926d774a" name="Changes" comment="add report's draft version">
+      <change afterPath="$PROJECT_DIR$/lab1_plus/lab1_report.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1_plus/screenshot_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1_plus/screenshot_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1_plus/screenshot_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1_plus/screenshot_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1_plus/screenshot_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab1_plus/screenshot_6.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/Screenshot_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/Screenshot_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/Screenshot_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/Screenshot_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/Screenshot_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/Screenshot_8.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,12 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1764512733051</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add report's draft version">
+      <option name="closed" value="true" />
+      <created>1765111419464</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765111419464</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added the proofs" />
     <MESSAGE value="added lab 1 (cloud)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lab 1 (cloud)" />
+    <MESSAGE value="add report's draft version" />
+    <option name="LAST_COMMIT_MESSAGE" value="add report's draft version" />
   </component>
 </project>
