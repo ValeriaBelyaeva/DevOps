@@ -1,0 +1,45 @@
+﻿name: BAD CI/CD (works, but unsafe)
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build_test_deploy_in_one_job:
+    runs-on: ubuntu-latest
+
+    # BAD PRACTICE: overly broad permissions
+    permissions: write-all
+
+    steps:
+      # BAD PRACTICE: floating action ref (@master)
+      - name: Checkout (floating ref)
+        uses: actions/checkout@master
+
+      # BAD PRACTICE: excessive debug; prints environment (risk of secret leakage)
+      - name: Debug everything (leaks context)
+        run: |
+          set -x
+          echo "Actor: $GITHUB_ACTOR"
+          echo "Ref:   $GITHUB_REF"
+          env | sort
+
+      # BAD PRACTICE: curl|bash install (supply-chain risk), unnecessary reinstall each run
+      - name: Install Python via apt (unnecessary) and dependencies (no caching)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          pip3 install -r requirements.txt
+
+      # BAD PRACTICE: tests do not gate the pipeline (ignore failures)
+      - name: Run tests but do not fail pipeline
+        continue-on-error: true
+        run: |
+          pytest -q || true
+
+      # BAD PRACTICE: deploy runs on every event (including PRs) and without environment protection
+      - name: Deploy to PRODUCTION (unsafe)
+        run: |
+          echo "Deploying to PRODUCTION from $GITHUB_REF ..."
+          echo "DONE"
